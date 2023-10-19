@@ -1,7 +1,10 @@
 import"../Styles/Header.css";
 import image from  "../assets/images/plane.png";
-// import image from  "../assets/images/Group 688.png";
-// import image from  "../assets/images/Vector.png ";
+import image1 from  "../assets/images/Group 688.png";
+import image2 from  "../assets/images/Vector.png";
+import { FcGoogle } from 'react-icons/fc';
+import { AiFillApple } from 'react-icons/ai';
+import { BsFacebook } from 'react-icons/bs';
 
 
 const Header = () => {
@@ -31,18 +34,37 @@ const Header = () => {
                     <a href="">forgot your password</a>
 
                     <button>LOGIN</button>
-                    <p>OR</p>
+                    <p className="fine">OR</p>
                     
                 </section>
                 <section className="links">
-                    <button>go</button>
-                    <button>f</button>
-                    <button>A</button>
-                </section>
-                <footer>
-                <img src={image} />
-                <img src={image} />
 
+                    <div>
+                    <FcGoogle size={40} />
+
+                    </div>
+
+
+                    <div>
+                    < BsFacebook size={40} color="lightskyblue"/>
+
+
+                    </div>
+                    <div>
+                     < AiFillApple size={40}/>
+
+                    </div>
+                   
+                </section>
+                <div className="dont">
+
+                    <p>Don't have account?<b> Register Now</b></p>
+
+                </div>
+
+                <footer>
+                    <img src={image2} />
+                    <img src={image1} />
                 </footer>
 
             </aside>
